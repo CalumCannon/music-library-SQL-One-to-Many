@@ -27,17 +27,20 @@ album2 = Album.new({
   'title' => 'Experience',
   'genre' => 'Techno',
   'artist_id' => "#{artist2.id}"
-
 });
 album2.save();
 
 album3 = Album.new({
-  'title' => 'Human After All',
+  'title' => 'human After All',
   'genre' => 'Dance',
-  'artist_id' => "#{artist3.id}"
-
+  'artist_id' => "#{artist1.id}"
 });
 album3.save();
+
+album3.title = "Human After All"
+album3.update();
+# album3.save();
+
 
 binding.pry
 nil
